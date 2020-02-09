@@ -30,12 +30,12 @@ For an extra challenge however, we would optionally like people to stick to a ti
 
 * You should be able to open the program (it should compile)
 * You should be able to quit the program (sans interupt)
-* You should be able to open a file using a filename
-* You should be able to list the contents of this file
-* You should be able to append to the end of this file
+* You should be able to open a file using it's filename
+* You should be able to list the contents of a file
+* You should be able to append to the end of a file
 
 Hint: Use a buffer!
-* This will limit your interactions with the file to just twice, opening and writing.
+* This will limit your interactions with the file to just two, opening and writing.
 
 At this point a very simple version of the application may function like so:
 
@@ -63,10 +63,10 @@ Bye!
 
 ### level 2
 
-* You should be able to edit an existing line in the file
+* You should be able to edit an existing line a file
 * You should be able to delete lines from a file
 * You should be able to add lines to the middle of a file
-* You should be able to swap two or more liner or blocks in the file
+* You should be able to swap two or more line or blocks a file
 
 At this point a very simple version of the application may function like so:
 
