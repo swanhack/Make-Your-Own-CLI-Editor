@@ -80,7 +80,6 @@ File opened.
 
 > edit 1
 Hi
-.
 
 > list
 1    Hi
