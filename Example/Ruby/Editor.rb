@@ -1,11 +1,8 @@
 # Contributed by Gnome
 
 prompt = ""
-input = ""
-
 file_name = ""
 buffer = []
-
 verbose = false
 
 loop do
@@ -16,46 +13,28 @@ loop do
     case input[0]
     when "p"
         # Prompt
-
-        if input.split(" ").length == 1
-            prompt = "* "
-        else
-            prompt = "#{input.split(" ")[1]} "
-        end
+        (input.split(" ").length == 1) ? prompt = "* " : prompt = "#{input.split(" ")[1]} "
 
     when "h"
         # Help
-
         verbose = !verbose
 
     when "o"
         # Open a file
-
         if input.split(" ").length == 1
             puts "No file name provided." if verbose
         else
             file_name = input.split(" ")[1]
-
-            if File.exists?(file_name)
-                buffer = File.read(file_name).split
-            else
-                File.new(file_name, "w")
-            end
-
+            File.exists?(file_name) ? buffer = File.read(file_name).split : File.new(file_name, "w")
             puts "File opened." if verbose
         end
 
     when "l"
         # List the buffer
-
-        (1..buffer.length).each do |i|
-            puts "#{i.to_s.ljust(8)}#{buffer[i-1]}"
-        end
+        (1..buffer.length).each { |i| puts "#{i.to_s.ljust(8)}#{buffer[i - 1]}" }
 
     when "a"
         # Append to the buffer
-
-        line = ""
         loop do
             line = gets
             break if line.start_with? "."
@@ -64,16 +43,10 @@ loop do
 
     when "w"
         # Write the buffer to file
-
         if file_name != ""
             file = File.open(file_name, "w")
-
-            buffer.each do |line|
-                file.write "#{line}\n"
-            end
-
+            buffer.each { |line| file.write "#{line}\n" }
             file.close
-
             puts "File written." if verbose
         else
             puts "File name missing." if verbose
@@ -81,7 +54,7 @@ loop do
 
     end
 
-break if input[0] == "q"
+    break if input[0] == "q"
 end
 
 puts "Bye!"
