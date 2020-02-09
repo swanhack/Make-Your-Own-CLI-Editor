@@ -2,7 +2,7 @@
 
 Yelo, this week we want you to try and make your own Command Line Editor.. that is, a command line application that allows you to both create and edit files.
 
-The various exapmples attached to this repo are not meant to be complete examples or fully fledged in anyway, they were all hacked together by an idiot in around an hour, none the less they are all working examples.
+The various examples attached to this repo are not fully fledged in anyway, they were all hacked together by an idiot in around an hour, none the less they are all working examples.
 
 ## What is a file?
 
@@ -30,6 +30,7 @@ These code snippets are intentionally vague, there are no language restrictions.
 * You should be able to open a file using a filename as an argument and append to them
 
 Notes: Some of these may need internal commands.
+Hint: Use a buffer!
 
 At this point a very simple version of the application may function like so:
 
