@@ -2,7 +2,7 @@
 
 Yelo, this week we want you to try and make your own Command Line Editor.. that is, a command line application that allows you to both create and edit files.
 
-The example code attached to this repo is crap, an idiot (me) hacked it together in under 90 minutes, never the less it is a working example.
+The various exapmples attached to this repo are not meant to be complete examples or fully fledged in anyway, they were all hacked together by an idiot in around an hour, none the less they are all working examples.
 
 ## What is a file?
 

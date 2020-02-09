@@ -1,3 +1,5 @@
+# Contributed by Gnome
+
 prompt = ""
 input = ""
 
