@@ -2,17 +2,17 @@
 
 Yelo, this week we want you to try and make your own Command Line Editor.. that is, a command line application that allows you to both create and edit files.
 
-The various examples attached to this repo are not fully fledged in anyway, they were all hacked together by an idiot in around an hour, none the less they are all working examples.
+The various examples attached to this repo are not fully fledged in anyway, they were all hacked together in around an hour, none the less they are all working examples.
 
 ## What is a file?
 
-Abstracted somewhat, a file need be no more than a list of lines.
+Abstracted somewhat, a basic file need be no more than a list of lines.
 
 ```
 file = List(line)
 ```
 
-Beyond this the main scope of the program will be a loop that continually waits for for a user to type something:
+Beyond this the main scope of a line editor might be a loop that continually waits for input:
 
 ```
 while (Exit command not given) do {
@@ -22,15 +22,20 @@ while (Exit command not given) do {
 
 These code snippets are intentionally vague, there are no language restrictions.
 
+For an extra challenge however, we would optionally like people to stick to a time limit of one hour.  Imagine it as a mini practice Hackathon if you will.
+
 ## Cool, but what do we do?
 
 ### Level 1
 
-* You should be able to open it, type stuff and then save it under a filename you choose
-* You should be able to open a file using a filename as an argument and append to them
+* You should be able to open the program (it should compile)
+* You should be able to quit the program (sans interupt)
+* You should be able to open a file using a filename
+* You should be able to list the contents of this file
+* You should be able to append to the end of this file
 
-Notes: Some of these may need internal commands.
 Hint: Use a buffer!
+* This will limit your interactions with the file to just twice, opening and writing.
 
 At this point a very simple version of the application may function like so:
 
@@ -58,7 +63,10 @@ Bye!
 
 ### level 2
 
-* Edit existing files, delete lines, add lines, change lines, swap lines, etc
+* You should be able to edit an existing line in the file
+* You should be able to delete lines from a file
+* You should be able to add lines to the middle of a file
+* You should be able to swap two or more liner or blocks in the file
 
 At this point a very simple version of the application may function like so:
 
@@ -90,7 +98,14 @@ Bye!
 
 ### level 3
 
-* Why are you asking me? You clearly know what you want.
+Why are you asking me? You clearly know what you want.
+
+Oh go on then .. things you could add:
+
+* Optional / Toggleable, User Defined / Default prompt
+* Optional / Toggleable, User Defined / Default error messages
+    * Possibly with varying levels of verbosity?
+* Ability to search a file for occurences of a character / word / string
 
 ## The end
 
