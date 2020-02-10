@@ -16,9 +16,9 @@ def main():
     if args[0] in ["python", "python3"]:
         args.pop(0)
 
-    if len(sys.argv) == 1:
+    if len(args) == 1:
         parse_commands()
-    elif len(sys.argv) == 2:
+    elif len(args) == 2:
         filename = sys.argv[1]
         open_file(filename)
         parse_commands()
