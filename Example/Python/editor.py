@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# Contributed by a train nerd who hates diesel trains and thinks EMUs are the best
 
 import sys
 
@@ -10,6 +11,11 @@ file = None
     
 
 def main():
+    args = sys.argv
+    # Remove the 0th argument when run using an interpreter command
+    if args[0] in ["python", "python3"]:
+        args.pop(0)
+
     if len(sys.argv) == 1:
         parse_commands()
     elif len(sys.argv) == 2:
