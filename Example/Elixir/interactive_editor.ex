@@ -1,6 +1,4 @@
 defmodule InteractiveEditor do
-  import FileEditor
-
   defstruct file: nil
 
   def start do
