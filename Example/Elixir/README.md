@@ -8,6 +8,10 @@ or
 - Put it in a mix project.
 - `iex -S mix`
 
+then
+
+- `InteractiveEditor.start`
+
 ## Commands
 `h`: Prints this text.
 
