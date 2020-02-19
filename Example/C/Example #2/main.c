@@ -8,12 +8,12 @@ This does not accept command line arguments
 # include <stdio.h>
 # include "editor.h"
 
-FileBuffer buffer;
-char line[MAX_LENGTH];
-char filename[MAX_LENGTH];
-char prompt = '>';
 
 int main(int argc, char const *argv[]) {
+    FileBuffer buffer;
+    char line[MAX_LENGTH];
+    char filename[MAX_LENGTH];
+    char prompt = '>';
     int exit = FALSE;
 
     while (!exit) {
