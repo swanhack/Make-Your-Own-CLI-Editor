@@ -8,7 +8,6 @@ This does not accept command line arguments
 # include <stdio.h>
 # include "editor.h"
 
-
 int main(int argc, char const *argv[]) {
     FileBuffer buffer;
     char line[MAX_LENGTH];
